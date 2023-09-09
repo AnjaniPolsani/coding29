@@ -15,10 +15,9 @@ class Login extends Component {
   }
 
   onClickLogin = async () => {
-    const username = 'rahul'
-    const password = 'rahul@2021'
+    
     const url = 'https://apis.ccbp.in/login'
-    const userDetails = {username, password}
+    const userDetails = {username:"rahul", password="rahul@2021"}
     const options = {
       method: 'POST',
       body: JSON.stringify(userDetails),
